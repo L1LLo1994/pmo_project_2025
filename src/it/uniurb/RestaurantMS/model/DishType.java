@@ -5,9 +5,16 @@
 package it.uniurb.RestaurantMS.model;
 
 /**
- *
- * @author lucapaolillo
+ * Define dishes type.
+ * 
  */
-public class Product {
+public enum DishType {
+    STARTER,
+    FIRST_COURSE,
+    SECOND_COURSE,
+    SIDE_DISH,
+    PIZZA,
+    DESSERT,
+    DRINK
     
 }

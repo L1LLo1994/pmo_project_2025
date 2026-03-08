@@ -8,6 +8,8 @@ package it.uniurb.RestaurantMS.model;
  *
  * @author lucapaolillo
  */
-public class MenuEntry {
-    
+enum OrderStatus {
+    NEW,
+    IN_PROGRESS,
+    COMPLETED
 }

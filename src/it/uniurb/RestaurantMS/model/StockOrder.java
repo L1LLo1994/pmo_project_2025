@@ -4,10 +4,44 @@
  */
 package it.uniurb.RestaurantMS.model;
 
+import java.util.HashMap;
+
 /**
  *
  * @author lucapaolillo
  */
 public class StockOrder {
+    private final int stockOrderID;
+    private String stockOrderName;
+    private HashMap<Ingredient, Integer> orderList;
     
+    public StockOrder(int id, String name){
+        this.orderList = new HashMap<Ingredient, Integer>();
+        this.stockOrderID = id;
+        this.stockOrderName = name;
+    }
+    
+    public void addIngredientToOrder(Ingredient ingr, int quantity){
+        this.orderList.putIfAbsent(ingr, quantity);
+    }
+    
+    public void removeIngredientFromOrder(Ingredient ingr){
+        this.orderList.remove(ingr);
+    }
+    
+    public int getOrderID(){
+        return this.stockOrderID;
+    }
+    public String getOrderName(){
+        return this.stockOrderName;
+    }
+    public void setOrderName(String name){
+        this.stockOrderName = name;
+    }
+    public void printContents(){
+        System.out.println(orderList);
+    }
+    public String toString() {
+        return "StockOrder{name='" + stockOrderName + "', ID='" + stockOrderID + "'"; 
+    } 
 }

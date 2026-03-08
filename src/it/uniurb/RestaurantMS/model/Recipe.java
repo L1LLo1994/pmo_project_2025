@@ -10,4 +10,35 @@ package it.uniurb.RestaurantMS.model;
  */
 public class Recipe {
     
+    private String recipeName;
+    private boolean isCustom = false;
+    
+    public Recipe (String recipeName) {
+        this.recipeName = recipeName;
+    }
+    /*
+    public void setRecipeId(int id) {
+        this.recipeId = id;
+    }
+    
+    
+    public int getRecipeId() {
+        return recipeId;
+    }
+    
+    public String getRecipeName() {
+        return recipeName;
+    }
+    
+    public boolean getIsCustom() {
+        return isCustom;
+        
+    }
+    
+    @Override
+    public String toString() {
+        return "Name: " + recipeName + ", ID: " + recipeId; 
+    }
+    */
+    
 }
