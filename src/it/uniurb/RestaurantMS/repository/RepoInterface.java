@@ -38,5 +38,6 @@ public interface RepoInterface<X> {
 */ 
     public boolean updateItemName(X itemToUpdate, String name);
     
+    public void printContents();
     
 }

@@ -74,9 +74,10 @@ public class StockOrderRepository implements RepoInterface<StockOrder>{
         
     }
     
+    @Override
     public void printContents(){
         for(StockOrder item : orderList){
-            item.printContents();
+            System.out.println(item.toString());
             
         }
     }

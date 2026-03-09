@@ -96,6 +96,7 @@ public class IngredientRepository implements RepoInterface<Ingredient> {
         
     }
 
+    @Override
     public void printContents(){
         for(Ingredient item : ingredientList){
             System.out.println(item.toString());

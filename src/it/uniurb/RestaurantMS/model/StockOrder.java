@@ -41,7 +41,8 @@ public class StockOrder {
     public void printContents(){
         System.out.println(orderList);
     }
+    @Override
     public String toString() {
-        return "StockOrder{name='" + stockOrderName + "', ID='" + stockOrderID + "'"; 
+        return "StockOrder{name='" + this.stockOrderName + "', ID='" + this.stockOrderID + "'}"; 
     } 
 }
