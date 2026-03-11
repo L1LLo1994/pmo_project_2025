@@ -2,19 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package it.uniurb.RestaurantMS.model;
+package it.uniurb.RestaurantMS.clientorder;
 
 /**
- * Define dishes type.
- * 
+ *
+ * @author lucapaolillo
  */
-public enum DishType {
-    STARTER,
-    FIRST_COURSE,
-    SECOND_COURSE,
-    SIDE_DISH,
-    PIZZA,
-    DESSERT,
-    DRINK
-    
+enum OrderStatus {
+    NEW,
+    IN_PROGRESS,
+    COMPLETED
 }

@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package it.uniurb.RestaurantMS.repository;
+package it.uniurb.RestaurantMS.recipe;
 
-import it.uniurb.RestaurantMS.model.Recipe;
+import it.uniurb.RestaurantMS.core.RepoInterface;
 import java.util.LinkedHashSet;
 
 /**
